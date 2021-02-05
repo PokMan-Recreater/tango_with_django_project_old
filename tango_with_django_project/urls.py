@@ -25,7 +25,6 @@ app_name = 'rango'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('rango/about/', views.about, name='about'),
     path('rango/', include('rango.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
